@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="pepsistylesheet.css">
+</head>
+<body>
+    <div class="section">
+    <div class="header">
+        <div class="image">
+            <img src="logo (1).png" alt="pepsi logo" >
+        </div>
+        <div class="navbars">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="leftcontent">
+            <h1>THAT'S WHAT <br>I LIKE</h1>
+            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus
+                 tempore nam labore est mollitia quae dolore sed beatae corrupti error inventore nisi,
+                  dicta sapiente ab iste enim vero voluptate!</p>
+                  <button>View All Products</button>
+        </div>
+        <div class="rightcontent">
+            <img src="pepsi001.png" alt="pepsi" id="pepsiImage">
+        </div>
+    </div>
+    <div class="minature">
+        <img src="pepsi001.png" alt="" onclick="imageChanger('pepsi001.png');backGroundChange('#0062be')";>
+        <img src="pepsi002.png" alt="" onclick="imageChanger('pepsi002.png');backGroundChange('#e60c2c')";>
+        <img src="pepsi003.png" alt="" onclick="imageChanger('pepsi003.png');backGroundChange('#1e1e1e')";>
+    </div>
+    <div class="icons">
+        <img src="instagram (1).png" alt="">
+        <img src="facebook (1).png" alt="">
+        <img src="twitter (1).png" alt="">
+    </div>
+    </div>
+<script>
+    function imageChanger(imageRetrieved){
+        console.log('button clicked')
+        document.getElementById('pepsiImage').src = imageRetrieved;
+        console.log(pepsiImage);
+    }
+    function backGroundChange(color){
+       let  bgchangeColor = document.querySelector('body');
+           bgchangeColor.style.background = color;
+    }
+
+</script>
+</body>
+</html>

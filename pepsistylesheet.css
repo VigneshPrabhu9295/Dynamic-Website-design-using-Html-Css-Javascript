@@ -1,0 +1,130 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-color: crimson;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  box-sizing: border-box;
+}
+.header .image {
+  padding: 10px 30px;
+}
+.header .image img {
+  background-color: transparent;
+  max-width: 60px;
+}
+
+.header .navbars ul {
+  padding-top: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header .navbars ul li {
+  padding: 10px 20px;
+  transition: 1s ease;
+}
+.header .navbars ul li a {
+  color: aliceblue;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header .navbars ul li :hover {
+  font-size: 22px;
+  transition: 0.5s linear;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.leftcontent {
+  padding: 10px;
+}
+
+.leftcontent .text {
+  text-align: start;
+  max-width: 600px;
+  color: aliceblue;
+}
+
+.leftcontent button {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 2px black;
+}
+
+.leftcontent h1 {
+  margin: 10px 0;
+  color: white;
+}
+
+.rightcontent {
+  margin-top: 20px;
+}
+.minature {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  /* translate: transformX(-50%); */
+}
+.minature img {
+  max-width: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+.minature img:hover {
+  transform: translateY(-30px);
+  transition: 0.3s linear;
+}
+
+.icons {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid white; */
+  padding: 10px;
+  border-radius: 20px;
+}
+.icons img {
+  padding: 10px 5px;
+  transform: scale(0.6);
+  filter: invert(1);
+  max-width: 30px;
+  cursor: pointer;
+}
+.icons img:nth-child(2) {
+  max-width: 20px;
+  position: relative;
+  left: 4px;
+}
